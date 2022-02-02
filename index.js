@@ -10,6 +10,12 @@ function thoiGian() {
     if (giay < 10) {
         giay = "0" + giay;
     }
+    if (day < 10) {
+        day = "0" + (day - 1);
+    }
+    if (month < 10) {
+        month = "0" + (month + 1);
+    }
 
     setTimeout("thoiGian()", 1000);
 
